@@ -1,0 +1,444 @@
+/*
+* Tokyo Night Theme for Thymer
+* Based on Tokyo Night (Night/Storm) + Tokyo Night Light palettes provided
+*
+* (Fully swapped variants)
+* - Dark: swaps #1a1b26 ↔ #24283b everywhere they appear (including rgba equivalents)
+* - Light: swaps #e6e7ed ↔ #ffffff everywhere they appear (including rgba equivalents)
+*/
+
+/* ------------------------------------------- */
+/* Tokyo Night - Night/Storm (Dark)            */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-tokyo-night"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Tokyo Night Cyan             */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #7dcfff;
+    }
+
+    --text-base-size: 16px;
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Tokyo Night Bases   */
+    /* ------------------------------------------- */
+    --color-bg-50: #565f89;
+    --color-bg-100: #414868;
+    --color-bg-150: #1a1b26;
+    --color-bg-200: #1a1b26;
+    --color-bg-300: #1a1b26;
+    --color-bg-400: #24283b;
+    --color-bg-500: #24283b;
+    --color-bg-600: #24283b;
+    --color-bg-700: #24283b;
+    --color-bg-800: #1a1b26; /* Sidebar - background light */
+    --color-bg-900: #24283b;  /* Main window - main background */
+    --color-bg-950: #24283b;
+    --color-bg-500-50: rgba(36, 40, 59, 0.5);
+    --color-bg-950-50: rgba(36, 40, 59, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Tokyo Night Blue       */
+    /* ------------------------------------------- */
+    --color-primary-50: #f4f8fe;
+    --color-primary-100: #e4ecfd;
+    --color-primary-200: #ccdcfc;
+    --color-primary-300: #b2c9fa;
+    --color-primary-400: #7aa2f7; /* Tokyo Night Blue */
+    --color-primary-500: #688ad2;
+    --color-primary-600: #5571ad;
+    --color-primary-700: #435988;
+    --color-primary-800: #314163;
+    --color-primary-900: #222d45;
+    --color-primary-950: #161d2c;
+    --color-primary-400-70: rgba(122, 162, 247, 0.7);
+    --color-primary-950-20: rgba(22, 29, 44, 0.2);
+    --color-primary-text-100: #24283b;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Tokyo Night Foreground   */
+    /* ------------------------------------------- */
+    --color-text-50: #ffffff;
+    --color-text-100: #a9b1d6;
+    --color-text-200: #9aa5ce;
+    --color-text-300: #c0caf5;
+    --color-text-400: #c0caf5;
+    --color-text-500: #9aa5ce;
+    --color-text-600: #565f89;
+    --color-text-700: #7dcfff;
+    --color-text-800: #c0caf5;
+    --color-text-900: #1a1b26;
+    --color-text-950: #565f89;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Tokyo Night Accents   */
+    /* ------------------------------------------- */
+    --text-ok: #9ece6a;
+    --text-status-online: #9ece6a;
+    --text-warning: #e0af68;
+    --text-error: #f7768e;
+    --bg-alert: #f7768e;
+    --fg-alert: #c0caf5;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #7aa2f7;
+    --link-hover-color: #7dcfff;
+    --ed-link-color: #7aa2f7;
+    --ed-link-hover-color: #7dcfff;
+
+    --ed-hashtag-color: #bb9af7;
+    --ed-hashtag-bg: rgba(187, 154, 247, 0.15);
+
+    --ed-mention-color: #73daca;
+    --ed-mention-bg: rgba(115, 218, 202, 0.15);
+    --ed-mention-hover-bg: rgba(115, 218, 202, 0.25);
+    --ed-mention-hover-color: #b4f9f8;
+
+    --ed-datetime-color: #ff9e64;
+    --ed-datetime-bg: rgba(255, 158, 100, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Blue               */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #7aa2f7;
+    --ed-check-div-hover-border: #7dcfff;
+    --ed-check-done-bg: #7aa2f7;
+    --ed-check-done-fg: #c0caf5;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #565f89 !important;
+        text-decoration-color: #565f89 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(65, 72, 104, 0.8);
+    --selection-fg: #c0caf5;
+    --ed-selection-self-bg: rgba(65, 72, 104, 0.8);
+    --ed-selection-blurred-bg: rgba(65, 72, 104, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #7aa2f7 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #7aa2f7;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #7dcfff;
+
+    --ed-container-border-color: rgba(86, 95, 137, 0.25); /* #565f89 */
+    --ed-container-bg-color:     rgba(65, 72, 104, 0.08); /* #414868 */
+    
+    --ed-code-border:            rgba(65, 72, 104, 0.25); /* #414868 */
+    --ed-code-bg:                rgba(86, 95, 137, 0.08); /* #565f89 */
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #ff9e64 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(125, 207, 255, 0.1);
+    --ed-block-note-border: #7dcfff;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #24283b;
+    --cards-hover-bg: #1a1b26;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #7aa2f7;
+    --side-fg-active-focus: #c0caf5;
+    --sidebar-bg-hover: #1a1b26;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #24283b;
+    --cmdpal-selected-bg-color: #7aa2f7;
+    --cmdpal-selected-fg-color: #c0caf5;
+    --cmdpal-hover-bg-color: #1a1b26;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #1a1b26;
+    --input-border-color: #414868;
+    --input-border-focus: 1px solid #7aa2f7;
+    --input-border-shadow: 0 0 8px rgba(122, 162, 247, 0.4);
+
+    --button-primary-bg-color: #7aa2f7;
+    --button-primary-fg-color: #c0caf5;
+    --button-primary-bg-hover-color: #7dcfff;
+    --button-bg-color: #1a1b26;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #414868;
+
+    --color-shadow: rgba(36, 40, 59, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(36, 40, 59, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(36, 40, 59, 0.5);
+
+    --logo-color: #7aa2f7;
+    --logo-glow-shadow:
+        0 0 15px rgba(122, 162, 247, 0.4),
+        0 0 30px rgba(122, 162, 247, 0.2);
+
+    /* Enums - Tokyo Night Palette */
+    --enum-red-bg: rgba(247, 118, 142, 0.25);
+    --enum-red-fg: #f7768e;
+    --enum-orange-bg: rgba(255, 158, 100, 0.25);
+    --enum-orange-fg: #ff9e64;
+    --enum-yellow-bg: rgba(224, 175, 104, 0.25);
+    --enum-yellow-fg: #e0af68;
+    --enum-green-bg: rgba(158, 206, 106, 0.25);
+    --enum-green-fg: #9ece6a;
+    --enum-cyan-bg: rgba(42, 195, 222, 0.25);
+    --enum-cyan-fg: #2ac3de;
+    --enum-blue-bg: rgba(122, 162, 247, 0.25);
+    --enum-blue-fg: #7aa2f7;
+    --enum-purple-bg: rgba(187, 154, 247, 0.25);
+    --enum-purple-fg: #bb9af7;
+    --enum-pink-bg: rgba(247, 118, 142, 0.25);
+    --enum-pink-fg: #f7768e;
+
+    --prop-border-focused: #24283b;
+    --prop-bg-focused: rgba(122, 162, 247, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #7aa2f7;
+    --ed-drag-handle-hover-border: #7dcfff;
+
+    --gradient-scrim: none;
+}
+
+/* ------------------------------------------- */
+/* Tokyo Night Light - Clean Light             */
+/* ------------------------------------------- */
+html[data-theme="basic-light-tokyo-night"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Tokyo Night Light Purple     */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #5a3e8e;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Soft Grays          */
+    /* ------------------------------------------- */
+    --color-bg-50: #6c6e75;
+    --color-bg-100: #ffffff;
+    --color-bg-150: #e6e7ed;
+    --color-bg-200: #ffffff;
+    --color-bg-300: #ffffff;
+    --color-bg-400: #ffffff;
+    --color-bg-500: #ffffff;
+    --color-bg-600: #ffffff;
+    --color-bg-700: #e6e7ed;
+    --color-bg-800: #e6e7ed; /* Sidebar - light */
+    --color-bg-900: #ffffff; /* Main window - light */
+    --color-bg-950: #e6e7ed;
+    --color-bg-500-50: rgba(255, 255, 255, 0.5);
+    --color-bg-950-50: rgba(230, 231, 237, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Tokyo Night Light Teal */
+    /* ------------------------------------------- */
+    --color-primary-50: #eff3f2;
+    --color-primary-100: #d6e0de;
+    --color-primary-200: #b1c4c1;
+    --color-primary-300: #89a5a0;
+    --color-primary-400: #33635c; /* Tokyo Night Light Teal */
+    --color-primary-500: #2b544e;
+    --color-primary-600: #244540;
+    --color-primary-700: #1c3633;
+    --color-primary-800: #142825;
+    --color-primary-900: #0e1c1a;
+    --color-primary-950: #091211;
+    --color-primary-400-70: rgba(51, 99, 92, 0.7);
+    --color-primary-950-20: rgba(9, 18, 17, 0.2);
+    --color-primary-text-100: #ffffff;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Tokyo Night Light Ink    */
+    /* ------------------------------------------- */
+    --color-text-50: #111111;
+    --color-text-100: #343b58;
+    --color-text-200: #40434f;
+    --color-text-300: #343b58;
+    --color-text-400: #40434f;
+    --color-text-500: #6c6e75;
+    --color-text-600: #6c6e75;
+    --color-text-700: #5a3e8e;
+    --color-text-800: #343b58;
+    --color-text-900: #ffffff;
+    --color-text-950: #6c6e75;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Light Accents         */
+    /* ------------------------------------------- */
+    --text-ok: #385f0d;
+    --text-status-online: #385f0d;
+    --text-warning: #8f5e15;
+    --text-error: #8c4351;
+    --bg-alert: #8c4351;
+    --fg-alert: #e6e7ed;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #5a3e8e;
+    --link-hover-color: #2959aa;
+    --ed-link-color: #5a3e8e;
+    --ed-link-hover-color: #2959aa;
+
+    --ed-hashtag-color: #2959aa;
+    --ed-hashtag-bg: rgba(41, 89, 170, 0.1);
+
+    --ed-mention-color: #33635c;
+    --ed-mention-bg: rgba(51, 99, 92, 0.1);
+    --ed-mention-hover-bg: rgba(51, 99, 92, 0.2);
+    --ed-mention-hover-color: #33635c;
+
+    --ed-datetime-color: #965027;
+    --ed-datetime-bg: rgba(150, 80, 39, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Teal               */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #33635c;
+    --ed-check-div-hover-border: #89a5a0;
+    --ed-check-done-bg: #33635c;
+    --ed-check-done-fg: #e6e7ed;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #6c6e75 !important;
+        text-decoration-color: #6c6e75 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(255, 255, 255, 0.8);
+    --selection-fg: #343b58;
+    --ed-selection-self-bg: rgba(255, 255, 255, 0.8);
+    --ed-selection-blurred-bg: rgba(255, 255, 255, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #33635c 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #33635c;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #5a3e8e;
+
+    --ed-container-border-color: rgba(255, 255, 255, 0.25); /* #ffffff */
+    --ed-container-bg-color:     rgba(52, 59, 88, 0.08);    /* #343b58 */
+    
+    --ed-code-border:            rgba(52, 59, 88, 0.25);    /* #343b58 */
+    --ed-code-bg:                rgba(255, 255, 255, 0.08); /* #ffffff */
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #965027 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(90, 62, 142, 0.08);
+    --ed-block-note-border: #5a3e8e;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #e6e7ed;
+    --cards-hover-bg: #ffffff;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #33635c;
+    --side-fg-active-focus: #e6e7ed;
+    --sidebar-bg-hover: #eff3f2;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #e6e7ed;
+    --cmdpal-selected-bg-color: #33635c;
+    --cmdpal-selected-fg-color: #e6e7ed;
+    --cmdpal-hover-bg-color: #eff3f2;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #e6e7ed;
+    --input-border-color: #b1c4c1;
+    --input-border-focus: 1px solid #33635c;
+    --input-border-shadow: 0 0 8px rgba(51, 99, 92, 0.3);
+
+    --button-primary-bg-color: #33635c;
+    --button-primary-fg-color: #e6e7ed;
+    --button-primary-bg-hover-color: #2b544e;
+    --button-bg-color: #e6e7ed;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #eff3f2;
+
+    --color-shadow: rgba(0, 0, 0, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+    --logo-color: #33635c;
+    --logo-glow-shadow:
+        0 0 15px rgba(51, 99, 92, 0.3),
+        0 0 30px rgba(51, 99, 92, 0.2);
+
+    /* Enums - Tokyo Night Light Palette */
+    --enum-red-bg: rgba(140, 67, 81, 0.15);
+    --enum-red-fg: #8c4351;
+    --enum-orange-bg: rgba(150, 80, 39, 0.15);
+    --enum-orange-fg: #965027;
+    --enum-yellow-bg: rgba(143, 94, 21, 0.15);
+    --enum-yellow-fg: #8f5e15;
+    --enum-green-bg: rgba(56, 95, 13, 0.15);
+    --enum-green-fg: #385f0d;
+    --enum-cyan-bg: rgba(15, 75, 110, 0.15);
+    --enum-cyan-fg: #0f4b6e;
+    --enum-blue-bg: rgba(41, 89, 170, 0.15);
+    --enum-blue-fg: #2959aa;
+    --enum-purple-bg: rgba(90, 62, 142, 0.15);
+    --enum-purple-fg: #5a3e8e;
+    --enum-pink-bg: rgba(140, 67, 81, 0.15);
+    --enum-pink-fg: #8c4351;
+
+    --prop-border-focused: #e6e7ed;
+    --prop-bg-focused: rgba(51, 99, 92, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #33635c;
+    --ed-drag-handle-hover-border: #89a5a0;
+
+    --gradient-scrim: none;
+}
